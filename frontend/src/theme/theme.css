@@ -1,0 +1,98 @@
+:root {
+  --color-primary: #1f6f5b;
+  --color-primary-dark: #174f43;
+  --color-bg: #f6f8f5;
+  --color-surface: #ffffff;
+  --color-border: #dce4dc;
+  --color-text: #18231f;
+  --color-muted: #65736d;
+  --color-danger: #b42318;
+  --color-warning: #b7791f;
+  --color-success: #20794f;
+  --radius-card: 8px;
+  --spacing-page: 24px;
+  --shadow-card: 0 8px 24px rgba(22, 35, 31, 0.06);
+  font-family: "Segoe UI", "Aptos", system-ui, sans-serif;
+  color: var(--color-text);
+  background: var(--color-bg);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: var(--color-bg);
+}
+
+button,
+input,
+select,
+textarea {
+  font: inherit;
+}
+
+button {
+  cursor: pointer;
+}
+
+.button {
+  align-items: center;
+  background: var(--color-primary);
+  border: 1px solid var(--color-primary);
+  border-radius: 7px;
+  color: #fff;
+  display: inline-flex;
+  font-weight: 650;
+  gap: 8px;
+  min-height: 38px;
+  padding: 8px 14px;
+}
+
+.button.secondary {
+  background: var(--color-surface);
+  color: var(--color-text);
+  border-color: var(--color-border);
+}
+
+.button.danger {
+  background: var(--color-danger);
+  border-color: var(--color-danger);
+}
+
+.field {
+  display: grid;
+  gap: 6px;
+}
+
+.field label {
+  color: var(--color-muted);
+  font-size: 13px;
+  font-weight: 650;
+}
+
+.field input,
+.field select,
+.field textarea {
+  border: 1px solid var(--color-border);
+  border-radius: 7px;
+  min-height: 38px;
+  padding: 8px 10px;
+  width: 100%;
+}
+
+.status {
+  color: var(--color-muted);
+  padding: 18px;
+}
+
+.error {
+  color: var(--color-danger);
+}
+
+@media (max-width: 780px) {
+  :root {
+    --spacing-page: 16px;
+  }
+}
