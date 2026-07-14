@@ -1,9 +1,1 @@
-.agents/
-.codex/
-.local/
 
-backend/bin/
-backend/obj/
-
-frontend/dist/
-frontend/node_modules/
